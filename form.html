@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <center>
+    <img src="./Apsrtc.jpeg"width="100">
+    </center>
+    <title>APSRTC General Bus Pass Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .application-bar {
+            background-color:1976d2; /* Blue color */
+            color:rgb(119, 199, 231);
+            padding: 10px;
+            text-align: center;
+        }
+
+        fieldset {
+            border: 1px solidccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .address-bar {
+            background-color:43aebc; /* Light cyan */
+        }
+
+        .pass-type-bar {
+            background-color:fff3e0; /* Light orange */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            margin: 5px 10px 10px 0;
+        }
+
+        input[type="submit"] {
+            padding: 6px 20px;
+            font-size: 16px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="application-bar">
+        <h2>ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION</h2>
+        <h3>GENERAL BUS PASS APPLICATION</h3>
+    </div>
+    
+    <form>
+        <!-- Applicant Details -->
+        <fieldset>
+            <legend>Applicant Details</legend>
+            Name * <input type="text" required> 
+            Father's / Guardian's Name * <input type="text" required><br><br>
+
+            Date of Birth * <input type="date" required>
+            Gender * 
+            <input type="radio" name="gender" value="Female"> Female 
+            <input type="radio" name="gender" value="Male"> Male <br><br>
+
+            Age As On: 
+            <input type="text" placeholder="Year(s)"> 
+            <input type="text" placeholder="Month(s)"> 
+            <input type="text" placeholder="Day(s)"><br><br>
+
+            WhatsApp No <input type="text"> 
+            Aadhaar No * <input type="text" required><br><br>
+
+            E-mail Id * <input type="email" required>
+            Photo <input type="file">
+        </fieldset>
+
+        <!-- Residential Address Details -->
+        <fieldset class="address-bar">
+            <legend>Residential Address Details</legend>
+            Applicant's Address * <input type="text" required><br><br>
+
+            District * <input type="text" value="Ongole" required> 
+            Mandal * <input type="text" value="" required>
+            Village * <input type="text" value="" required><br><br>
+
+            Pincode * <input type="text" required>
+        </fieldset>
+
+        <!-- Pass Type Details -->
+        <fieldset class="pass-type-bar">
+            <legend>Pass Type Details</legend>
+            City * 
+            <select required>
+                <option>Ongole</option>
+            </select>
+
+            Pass Type *
+            <select required>
+                <option>----Select----</option>
+            </select>
+        </fieldset>
+
+        <!-- Mode of Payment & Collection -->
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+            Payment Mode *
+            <select>
+                <option>Select Payment Mode</option>
+            </select>
+
+            Pass Delivery Mode *
+            <select>
+                <option>Select Pass Delivery Mode</option>
+            </select>
+
+            Center to Collect Pass *
+            <select>
+                <option>--Select--</option>
+            </select>
+        </fieldset>
+
+        <!-- Captcha -->
+        <fieldset>
+            <legend>Captcha Verification</legend>
+            <label>Captcha: <span style="font-family: monospace; font-size: 16px;">ChAiTu</span></label><br>
+            Enter Captcha: <input type="text" required>
+        </fieldset>
+
+        <div class="center">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
